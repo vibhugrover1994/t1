@@ -1,0 +1,11 @@
+<script>
+    var containerId = 'root';
+    var componentRenderedOrUpdatedCallback = function () {
+      console.log('OHIF Viewer rendered/updated');
+    };
+    window.OHIFViewer.installViewer(
+      window.config, // See `/config/default.js`
+      containerId,
+      componentRenderedOrUpdatedCallback
+    );
+  </script>
